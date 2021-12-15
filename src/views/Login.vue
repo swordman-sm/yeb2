@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <el-form
         v-loading="loading"
         element-loading-text="正在登陆......"
@@ -107,6 +107,15 @@ export default {
   background: #fff;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
+}
+
+.container {
+  background: #f0f2f5 url("../assets/background.svg") no-repeat 100%;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  /*margin-top: -65px;!*上边距*!*/
+  background-size: 100%;
 }
 
 .loginTitle {
